@@ -12,7 +12,7 @@ jobs:
           command: |
               wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar -O selenium-server.jar
               Xvfb :7055
-              pip install selenium || true
+            
 
       - run:
           name: run text file
