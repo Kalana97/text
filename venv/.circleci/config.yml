@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install selenium
+          command: pip install selenium
+
+      - run:
+          name: run text file
+          command: python text.py
