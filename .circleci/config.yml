@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Start PIP
           command: pip install -U pip
-     - run:
+      - run:
           name: Start selenium
           command: sudo pip install selenium
 
