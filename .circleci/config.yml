@@ -11,7 +11,7 @@ jobs:
 #           command: apt-get install -y sudo        
       - run:
           name: Start PIP
-          command: apt search python3-pip
+          command: apt search pip
       - run:
           name: Start selenium
           command: apt search python3-selenium
