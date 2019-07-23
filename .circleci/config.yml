@@ -9,7 +9,7 @@ jobs:
               
       - run:
           name: Start PIP
-          command: sudo pip install -U pip
+          command: pip install --user codecov
       - run:
           name: Start selenium
           command: sudo pip install selenium
