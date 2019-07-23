@@ -8,12 +8,6 @@ jobs:
       - checkout
               
       - run:
-          name: Download PIP
-          command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-      - run:
-          name: Start pip
-          command: python get-pip.py
-      - run:
           name: Start selenium
           command: pip install selenium
 
