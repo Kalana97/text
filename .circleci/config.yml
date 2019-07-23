@@ -14,7 +14,7 @@ jobs:
           command: apt search python3-pip
       - run:
           name: Start selenium
-          command: pip install selenium
+          command: apt search python3-selenium
 
 
       - run:
