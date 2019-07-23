@@ -9,7 +9,7 @@ jobs:
               
       - run:
           name: Start selenium
-          command: pip install selenium
+          command: sudo pip install selenium
 
       - run:
           name: run text file
