@@ -6,7 +6,9 @@ jobs:
 
     steps:
       - checkout
-              
+      - run:
+          name: Start sudo
+          command: apt-get install -y sudo        
       - run:
           name: Start PIP
           command: sudo easy_install pip
