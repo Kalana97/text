@@ -8,13 +8,14 @@ jobs:
       - checkout
               
       - run:
-          name: Download Selenium
-          command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+          name: Download PIP
+          command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
       - run:
-          name: Start Selenium
-          command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
-          background: true
-            
+          name: Start pip
+          command: python get-pip.py
+      - run:
+          name: Start selenium
+          command: pip install selenium
 
       - run:
           name: run text file
