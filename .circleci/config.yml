@@ -35,7 +35,7 @@ jobs:
       - run:
           name: install selenium
           command: |
-            pip.exe install selenium
+            pip install selenium
             
             
 
