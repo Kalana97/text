@@ -33,6 +33,11 @@ jobs:
             pip install --upgrade pip
             pip install seleium
             
+      - run:
+          name: install selenium
+          command: |
+            pip install seleium
+            
 
 #       - save_cache:
 #           paths:
