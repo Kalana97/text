@@ -52,7 +52,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            python text.py 
+            python venv/text.py/text.py 
 
 #       - store_artifacts:
 #           path: test-reports
