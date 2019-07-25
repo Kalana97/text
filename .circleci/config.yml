@@ -27,11 +27,11 @@ jobs:
 #             # fallback to using the latest cache if no exact match is found
 #             - v1-dependencies-
 
-#       - run:
-#           name: install dependencies
-#           command: |
-#             - wget https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
-#             - unzip chromedriver_linux64.zip -d
+      - run:
+          name: install dependencies
+          command: |
+            - sudo wget https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
+            - sudo unzip chromedriver_linux64.zip -d
             
             
       - run:
