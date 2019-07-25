@@ -30,7 +30,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            - wget https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
+            sudo apt-get install chromium-chromedriver
             
             
       - run:
