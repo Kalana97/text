@@ -35,7 +35,8 @@ jobs:
       - run:
           name: install selenium
           command: |
-            pip install seleium
+            pip.exe install selenium
+            
             
 
 #       - save_cache:
