@@ -30,9 +30,8 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
+            python3 -m 
+            
 
 #       - save_cache:
 #           paths:
@@ -47,9 +46,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             python text.py test
 
-      - store_artifacts:
-          path: test-reports
-          destination: test-reports
+#       - store_artifacts:
+#           path: test-reports
+#           destination: test-reports
