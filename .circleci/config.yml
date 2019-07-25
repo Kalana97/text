@@ -32,10 +32,10 @@ jobs:
 #           command: |
 #             pip install --upgrade pip
             
-#       - run:
-#           name: install selenium
-#           command: |
-#             pip install selenium
+      - run:
+          name: install selenium
+          command: |
+            pip install selenium
             
             
 
